@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{
+    --shadow-color: #64748b;
+    --primary-color: #1d4ed8;
+    --secondary-color: #0f172a;
+    --light-color: #f0fdfa;
+}
+
+.about-us li{
+    font-size: 1.2rem;
+
+}
+
+.about-us p:last-of-type{
+    padding-block-start: 1.8rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.active{
+    background-color: var(--light-color);
+    color: var(--primary-color);
+}
+
+body::-webkit-scrollbar-track{
+    background: var(--primary-color);
+}
+::-webkit-scrollbar{
+    height: .5rem;
+    width: .5rem;
+
+}
+
+.horizontal-scroll::-webkit-scrollbar-track{
+    background: var(--shadow-color);
+    border-radius: 2rem;
+}
+
+
+
+::-webkit-scrollbar-thumb{
+   background: var(--secondary-color);
+   border-radius: 2rem;
+}
+
+.button-filled:hover{
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+
+header{
+    box-shadow: 4px 4px 4px var(--shadow-color);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.hero{
+    background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.how-it-works, .about-us{
+    padding-inline: 2rem;
+}
+
+.how-it-works h1, .about-us h1{
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-align: center;
+    padding-block: 1rem;
+}
+
+.how-it-works p, .about-us p{
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #0f172a;
+}
+
+.how-it-works h2, .about-us h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-align: center;
+    margin-block-start: 2rem;
+    margin-block-end: 1rem;
+}
+
+.how-it-works p:first-of-type, .about-us p:first-of-type{
+    text-align: center;
+    font-weight: 400;
+}
+
+.how-it-works p:last-of-type, .about-us p:last-of-type{
+    margin-block-end: 4rem;
+}
+
+.grid-auto, .listings-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    gap: 1rem;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.text-light{
+    color: var(--light-color);
+}
+
+.text-primary{
+    color: var(--primary-color);
+}
+
+.text-secondary{
+    color: var(--secondary-color);
+}
